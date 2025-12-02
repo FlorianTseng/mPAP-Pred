@@ -1,0 +1,204 @@
+****************************************************************
+  Sure Independence Screening and Sparsifying Operator (SISSO)  
+             Version SISSO.3.3, July, 2023.                
+****************************************************************
+
+Read in data from train.dat
+Read in data from SISSO.in
+Property type:     1
+Number of tasks:        1
+Descriptor dimension:        6
+Number of samples for the task(s):    120
+Restarts :  0
+Number of scalar features:        8
+Tier of the feature space:        3
+Maximal feature complexity (number of operators in a feature):        6
+Unit of input primary feature, each represented by a row vector: 
+    1.00
+    1.00
+    1.00
+    1.00
+    1.00
+    1.00
+    1.00
+    1.00
+The feature will be discarded if the minimum of the maximal abs. value in it <    0.10000E-03
+The faature will be discarded if the maximum of the maximal abs. value in it >     0.10000E+06
+Size of the SIS-selected (single) subspace :     10    10    10    10    10    10
+Operators for feature construction: (+)(-)(*)(/)(exp)(exp-)(^-1)(^2)(^3)(sqrt)(cbrt)(log)(|-|)(scd)(^6)(sin)(cos) (+)(-)(*)(/)(exp)(exp-)(^-1)(^2)(^3)(sqrt)(cbrt)(log)(|-|)(scd)(^6)(sin)(cos) (+)(-)(*)(/)(exp)(exp-)(^-1)(^2)(^3)(sqrt)(cbrt)(log)(|-|)(scd)(^6)(sin)(cos) 
+Method for sparse regression:  L0        
+Fitting intercept:      T
+Metric for model selection: RMSE
+Number of the top-ranked models to output:       50
+--------------------------------------------------------------------------------
+
+Dimension:   1
+-------------------
+Feature Construction (FC) starts ...
+Population Standard Deviation (SD) of the task 001:   19.59844
+Total number of features in the space phi00:              8
+Total number of features in the space phi01:            260
+Total number of features in the space phi02:          78462
+Total number of features in the space phi03:     1821757851
+Size of the SIS-selected subspace from phi03:         10
+Time (second) used for this FC:          650.51
+
+Descriptor Identification (DI) starts ...
+Total number of SIS-selected features from all dimensions:         10
+ 
+  1D descriptor: 
+     d001 = (((x1+x6)/x2)+abs((x2/x3)-(x5/x4)))    feature_ID:000001
+
+  1D model(y=sum(ci*di)+c0): 
+     coeff.(ci)_task001:     0.5657490170E+02
+             c0_task001:     0.1007626260E+02
+     RMSE,MaxAE_task001:     0.1020026919E+02    0.4057031899E+02
+
+     RMSE and MaxAE of the model:  10.200269 40.570319
+--------------------------------------------------------------------------------
+Time (second) used for this DI:            0.01
+
+Dimension:   2
+-------------------
+Feature Construction (FC) starts ...
+Total number of features in the space phi00:              8
+Total number of features in the space phi01:            260
+Total number of features in the space phi02:          78462
+Total number of features in the space phi03:     1821757851
+Size of the SIS-selected subspace from phi03:         10
+Time (second) used for this FC:          645.73
+
+Descriptor Identification (DI) starts ...
+Total number of SIS-selected features from all dimensions:         20
+ 
+  2D descriptor: 
+     d001 = (((x1+x6)/x2)+abs((x2/x3)-(x5/x4)))    feature_ID:000001
+     d002 = (((x1)^2/(x3)^3)/sin(log(x7)))    feature_ID:000011
+
+  2D model(y=sum(ci*di)+c0): 
+     coeff.(ci)_task001:     0.5593866328E+02    0.9993979151E+04
+             c0_task001:     0.9780824630E+01
+     RMSE,MaxAE_task001:     0.8757622654E+01    0.2900883114E+02
+
+     RMSE and MaxAE of the model:   8.757623 29.008831
+--------------------------------------------------------------------------------
+Time (second) used for this DI:            0.01
+
+Dimension:   3
+-------------------
+Feature Construction (FC) starts ...
+Total number of features in the space phi00:              8
+Total number of features in the space phi01:            260
+Total number of features in the space phi02:          78462
+Total number of features in the space phi03:     1821757851
+Size of the SIS-selected subspace from phi03:         10
+Time (second) used for this FC:          646.25
+
+Descriptor Identification (DI) starts ...
+Total number of SIS-selected features from all dimensions:         30
+ 
+  3D descriptor: 
+     d001 = (((x1+x6)/x2)+abs((x2/x3)-(x5/x4)))    feature_ID:000001
+     d002 = (((x1)^2/(x3)^3)/sin(log(x7)))    feature_ID:000011
+     d003 = (sin((x8)^3)*((x8/x4)*log(x4)))    feature_ID:000026
+
+  3D model(y=sum(ci*di)+c0): 
+     coeff.(ci)_task001:     0.5989019487E+02    0.1049300398E+05   -0.9353420006E-03
+             c0_task001:     0.8671219444E+01
+     RMSE,MaxAE_task001:     0.7427385076E+01    0.2038083430E+02
+
+     RMSE and MaxAE of the model:   7.427385 20.380834
+--------------------------------------------------------------------------------
+Time (second) used for this DI:            0.09
+
+Dimension:   4
+-------------------
+Feature Construction (FC) starts ...
+Total number of features in the space phi00:              8
+Total number of features in the space phi01:            260
+Total number of features in the space phi02:          78462
+Total number of features in the space phi03:     1821757851
+Size of the SIS-selected subspace from phi03:         10
+Time (second) used for this FC:          645.71
+
+Descriptor Identification (DI) starts ...
+Total number of SIS-selected features from all dimensions:         40
+ 
+  4D descriptor: 
+     d001 = (((x1+x6)/x2)+abs((x2/x3)-(x5/x4)))    feature_ID:000001
+     d002 = (((x1)^2/(x3)^3)/sin(log(x7)))    feature_ID:000011
+     d003 = (sin((x8)^3)*((x8/x4)*log(x4)))    feature_ID:000026
+     d004 = (sin((x7/x5))*(cos(x1)+cos(x5)))    feature_ID:000031
+
+  4D model(y=sum(ci*di)+c0): 
+     coeff.(ci)_task001:     0.5810860863E+02    0.1085341048E+05   -0.7714766500E-03   -0.4773006437E+01
+             c0_task001:     0.9241628006E+01
+     RMSE,MaxAE_task001:     0.6690144597E+01    0.1861415989E+02
+
+     RMSE and MaxAE of the model:   6.690145 18.614160
+--------------------------------------------------------------------------------
+Time (second) used for this DI:            4.69
+
+Dimension:   5
+-------------------
+Feature Construction (FC) starts ...
+Total number of features in the space phi00:              8
+Total number of features in the space phi01:            260
+Total number of features in the space phi02:          78462
+Total number of features in the space phi03:     1821757851
+Size of the SIS-selected subspace from phi03:         10
+Time (second) used for this FC:          644.64
+
+Descriptor Identification (DI) starts ...
+Total number of SIS-selected features from all dimensions:         50
+ 
+  5D descriptor: 
+     d001 = (((x1+x6)/x2)+abs((x2/x3)-(x5/x4)))    feature_ID:000001
+     d002 = (((x1)^2/(x3)^3)/sin(log(x7)))    feature_ID:000011
+     d003 = (sin((x8)^3)/((x4/x8)*cbrt(x4)))    feature_ID:000028
+     d004 = (sin((x7/x5))*(cos(x1)+cos(x5)))    feature_ID:000031
+     d005 = abs(cos(log(x1))-(cos(x1)*cos(x6)))    feature_ID:000041
+
+  5D model(y=sum(ci*di)+c0): 
+     coeff.(ci)_task001:     0.5553152583E+02    0.1056045315E+05    0.8332523066E-03   -0.5341902802E+01   -0.6932427882E+01
+             c0_task001:     0.1601064900E+02
+     RMSE,MaxAE_task001:     0.6035099752E+01    0.1795179662E+02
+
+     RMSE and MaxAE of the model:   6.035100 17.951797
+--------------------------------------------------------------------------------
+Time (second) used for this DI:          293.62
+
+Dimension:   6
+-------------------
+Feature Construction (FC) starts ...
+Total number of features in the space phi00:              8
+Total number of features in the space phi01:            260
+Total number of features in the space phi02:          78462
+Total number of features in the space phi03:     1821757851
+Size of the SIS-selected subspace from phi03:         10
+Time (second) used for this FC:          644.71
+
+Descriptor Identification (DI) starts ...
+Total number of SIS-selected features from all dimensions:         60
+ 
+Final model/descriptor !
+================================================================================
+  6D descriptor: 
+     d001 = (((x1+x6)/x2)+abs((x2/x3)-(x5/x4)))    feature_ID:000001
+     d002 = (((x1)^2/(x3)^3)/sin(log(x7)))    feature_ID:000011
+     d003 = (sin((x8)^3)*((x8/x4)*log(x4)))    feature_ID:000026
+     d004 = (sin((x7/x5))*(cos(x1)+cos(x4)))    feature_ID:000032
+     d005 = abs(sin((x3+x8))-((x7/x8)-sin(x8)))    feature_ID:000044
+     d006 = ((cos(x1))^3/abs((x4/x3)-scd(x2)))    feature_ID:000048
+
+  6D model(y=sum(ci*di)+c0): 
+     coeff.(ci)_task001:     0.5668014591E+02    0.1068129364E+05   -0.6212926032E-03   -0.5250159276E+01   -0.4725514326E+01   -0.1210215829E-02
+             c0_task001:     0.1352338282E+02
+     RMSE,MaxAE_task001:     0.5404795158E+01    0.1230564519E+02
+
+     RMSE and MaxAE of the model:   5.404795 12.305645
+================================================================================
+Time (second) used for this DI:        17425.59
+Total time (second):        21601.64
+Have a nice day !    
+
