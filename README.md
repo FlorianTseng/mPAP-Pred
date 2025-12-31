@@ -1,6 +1,6 @@
 # Repository Overview
 
-This repository contains three main directories: **`SISSO`**, **`XGB-TabNet-Results`**, and **`Pred`**. These components provide the inputs, outputs, performance evaluations, and prediction utilities used in our study.
+This repository contains three main directories: **`SISSO`**, **`XGB-TabNet-Results`**, and **`Pred`**. These components provide the inputs, outputs, performance evaluations, and prediction utilities used in our study [*Artificial intelligence-driven multivariate integration for pulmonary arterial pressure prediction in pulmonary hypertension*](http://dx.doi.org/10.1038/s41746-025-02233-6).
 
 ---
 
@@ -41,5 +41,3 @@ To generate predictions:
 ---
 
 If you need further guidances, feel free to ask!
-
-<span class="__dimensions_badge_embed__" data-doi="10.1038/s41746-025-02233-6" data-style="small_rectangle"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
