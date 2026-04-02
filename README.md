@@ -40,7 +40,7 @@ To generate predictions:
 
 ---
 
-## Citation
+## 📕 Citation
 ```
 @article{zeng2025artificial,
   title={Artificial intelligence-driven multivariate integration for pulmonary arterial pressure prediction in pulmonary hypertension},
