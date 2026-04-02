@@ -50,7 +50,6 @@ To generate predictions:
   publisher={Nature Publishing Group UK London},
   doi={10.1038/s41746-025-02233-6}
 }
-
 ```
 ---
 
