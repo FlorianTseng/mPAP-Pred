@@ -40,4 +40,18 @@ To generate predictions:
 
 ---
 
+## Citation
+```
+@article{zeng2025artificial,
+  title={Artificial intelligence-driven multivariate integration for pulmonary arterial pressure prediction in pulmonary hypertension},
+  author={Zeng, Yuxuan and Ling, Gonghao and Zhang, Haojie and Cao, Wei and Zheng, Xuan and Deng, Xiaoxian and Lan, Lan and Sun, Rongqing and Liu, Xintian and Tian, Lin and others},
+  journal={npj Digit. Med.},
+  year={2025},
+  publisher={Nature Publishing Group UK London},
+  doi={10.1038/s41746-025-02233-6}
+}
+
+```
+---
+
 If you need further guidances, feel free to ask!
